@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.pyc
+env/
+venv/
+.venv/
+
+# DonkeyCar tub data (never commit - recorded on the car, hundreds of MB)
+data/
+data_*/
+tub_*/
+*.catalog
+*.catalog_manifest
+
+# Trained networks are published as GitHub Release assets, not in git
+*.h5
+*.keras
+*.tflite
+*.onnx
+
+# Logs, caches, recordings
+*.log
+logs/
+*.mp4
+*.mov
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
