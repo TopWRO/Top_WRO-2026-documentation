@@ -203,7 +203,7 @@ linkage (**TODO**: linkage type, Ackermann or parallel, and the measured wheel a
 command). The software maps a steering command $u\in[-1,1]$ to a goal position:
 
 ```math
-\delta = 40^\circ\cdot \operatorname{clip}\!\left(1.1\,u,\,-1,\,1\right),\qquad
+\delta = 40^\circ\cdot \mathrm{clip}\!\left(1.1\,u,\,-1,\,1\right),\qquad
 p_\text{goal} = 2016 + \delta\cdot\frac{4096}{360^\circ}
 ```
 
@@ -457,7 +457,7 @@ reversing). Its reading is smoothed and compared with the target $d^{\ast}$:
 ```
 
 ```math
-\Delta\psi = \operatorname{clip}\!\big(e_d\, g(|e_d|)\, s_\text{side}\, s_\text{motion},\ \pm 22^\circ\big),
+\Delta\psi = \mathrm{clip}\!\big(e_d\, g(|e_d|)\, s_\text{side}\, s_\text{motion},\ \pm 22^\circ\big),
 \qquad
 g(|e|) = \begin{cases}
 0 & |e| \le 0.7\ \text{cm (deadband)}\\
@@ -471,10 +471,10 @@ g(|e|) = \begin{cases}
 **Inner loop: heading → steering.**
 
 ```math
-u = \operatorname{clip}\!\big(0.03\,(\psi_\text{ref} + \Delta\psi - \psi),\ \pm 1\big)\cdot \operatorname{sgn}(v)
+u = \mathrm{clip}\!\big(0.03\,(\psi_\text{ref} + \Delta\psi - \psi),\ \pm 1\big)\cdot \mathrm{sgn}(v)
 ```
 
-The factor $\operatorname{sgn}(v)$ flips the steering when reversing, so the same law works
+The factor $\mathrm{sgn}(v)$ flips the steering when reversing, so the same law works
 in both directions.
 
 <table>
@@ -505,8 +505,8 @@ to that wall with a side ToF pair:
 <td>
 
 ```math
-\theta_R = \operatorname{atan2}(R_2 - R_1,\ d),\qquad
-\theta_L = \operatorname{atan2}(L_1 - L_2,\ d),\qquad d = 14.8\ \text{cm}
+\theta_R = \mathrm{atan2}(R_2 - R_1,\ d),\qquad
+\theta_L = \mathrm{atan2}(L_1 - L_2,\ d),\qquad d = 14.8\ \text{cm}
 ```
 
 Both rays are perpendicular to the body, so $R_2 - R_1 = d\tan\theta$ holds exactly at any

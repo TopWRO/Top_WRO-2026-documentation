@@ -45,7 +45,7 @@ We won Nationals with V1.0. V2.0 traded speed for stability.
 ### D3: Six ToF sensors with paired sides
 - **Decision.** F (VL53L4CX) and B, plus **two sensors per side** (R1/R2, L1/L2) 14.8 cm apart.
 - **Why pairs.** One side sensor measures distance. Two measure the wall angle as well
-  ($\theta=\operatorname{atan2}(R_2-R_1,d)$), which makes heading re-calibration possible (D6).
+  ($\theta=\mathrm{atan2}(R_2-R_1,d)$), which makes heading re-calibration possible (D6).
 - **Trade-off.** Strict round-robin ranging (one emitter at a time) means about 3.7 Hz per
   sensor. The controllers therefore filter, hold the last value over short dropouts, and use
   the gyro for the fast loop (D5).
