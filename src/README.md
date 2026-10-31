@@ -99,4 +99,4 @@ and are not committed to git:
 The current Pico firmware sends the labelled 11-field line. The Pi parser in
 `UnifiedRobotIO._read_latest_serial_frame()` still expects the legacy 7-field CSV.
 The adapter that is needed is described in
-[`docs/software.md`](../docs/software.md#serial-protocol).
+[`docs/software.md`](../docs/software.md#2-serial-protocol).
