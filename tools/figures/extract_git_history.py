@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""Collect commit dates/subjects of our repositories into docs/data/dev_history.json.
+"""Collect commit dates of our repositories into docs/data/dev_history.json.
 
 Usage:
     python3 tools/figures/extract_git_history.py <repo> [<repo> ...]
-Each repo is labelled by its folder name. Only dates and subjects are stored.
+Each repo is labelled by its folder name. Only commit DATES are stored (no
+messages, authors or hashes), so private repositories leak nothing.
 """
 import json
 import subprocess
@@ -14,9 +15,9 @@ OUT = Path(__file__).resolve().parents[2] / "docs" / "data" / "dev_history.json"
 
 
 def history(repo):
-    out = subprocess.run(["git", "-C", str(repo), "log", "--format=%ad\t%s", "--date=short"],
+    out = subprocess.run(["git", "-C", str(repo), "log", "--format=%ad", "--date=short"],
                          capture_output=True, text=True, check=True).stdout
-    return [dict(zip(("date", "subject"), ln.split("\t", 1))) for ln in out.splitlines() if ln]
+    return [{"date": ln} for ln in out.splitlines() if ln]
 
 
 def main():

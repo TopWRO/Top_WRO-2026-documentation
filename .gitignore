@@ -6,7 +6,7 @@ venv/
 .venv/
 
 # DonkeyCar tub data (never commit - recorded on the car, hundreds of MB)
-data/
+/data/
 data_*/
 tub_*/
 *.catalog
