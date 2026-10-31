@@ -10,8 +10,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.patches import Polygon, Rectangle
 
-from style import (AQUA, BLUE, INK, INK2, MUTED, ORANGE, REPO, RULE, SURFACE, VIOLET, YELLOW,
-                   save)
+from style import AQUA, BLUE, INK, INK2, MUTED, ORANGE, REPO, RULE, SURFACE, YELLOW, save
 
 DATA = REPO / "docs" / "data"
 

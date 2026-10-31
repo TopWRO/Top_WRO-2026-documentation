@@ -4,8 +4,6 @@ Each placeholder is written at the FINAL path the README already links to, so
 replacing a photo means overwriting one file - no README edits needed.
 The same list drives docs/photo-checklist.md.
 """
-from pathlib import Path
-
 from PIL import Image, ImageDraw, ImageFont
 
 from style import REPO

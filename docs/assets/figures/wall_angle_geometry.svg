@@ -6,7 +6,6 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-10-31T13:05:15.312680</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -35,7 +34,7 @@ L 439.555279 260.729508
 L 439.555279 35.7 
 L 430.554098 35.7 
 z
-" clip-path="url(#pe2778a3e6f)" style="fill: #3b3b38"/>
+" clip-path="url(#p5a7b74d259)" style="fill: #3b3b38"/>
    </g>
    <g id="patch_3">
     <path d="M 378.503358 70.470863 
@@ -43,11 +42,11 @@ L 337.955262 261.23466
 L 242.573363 240.960612 
 L 283.12146 50.196815 
 z
-" clip-path="url(#pe2778a3e6f)" style="fill: #f2f2f0; stroke: #52514e; stroke-width: 1.6; stroke-linejoin: miter"/>
+" clip-path="url(#p5a7b74d259)" style="fill: #f2f2f0; stroke: #52514e; stroke-width: 1.6; stroke-linejoin: miter"/>
    </g>
    <g id="line2d_1">
     <defs>
-     <path id="mc5cc063b01" d="M 0 3.5 
+     <path id="m4c81330a56" d="M 0 3.5 
 C 0.928211 3.5 1.81853 3.131218 2.474874 2.474874 
 C 3.131218 1.81853 3.5 0.928211 3.5 0 
 C 3.5 -0.928211 3.131218 -1.81853 2.474874 -2.474874 
@@ -59,19 +58,19 @@ C -1.81853 3.131218 -0.928211 3.5 0 3.5
 z
 " style="stroke: #ffffff"/>
     </defs>
-    <g clip-path="url(#pe2778a3e6f)">
-     <use xlink:href="#mc5cc063b01" x="369.769922" y="111.55845" style="fill: #2a78d6; stroke: #ffffff"/>
+    <g clip-path="url(#p5a7b74d259)">
+     <use xlink:href="#m4c81330a56" x="369.769922" y="111.55845" style="fill: #2a78d6; stroke: #ffffff"/>
     </g>
    </g>
    <g id="line2d_2">
-    <g clip-path="url(#pe2778a3e6f)">
-     <use xlink:href="#mc5cc063b01" x="346.688698" y="220.147073" style="fill: #2a78d6; stroke: #ffffff"/>
+    <g clip-path="url(#p5a7b74d259)">
+     <use xlink:href="#m4c81330a56" x="346.688698" y="220.147073" style="fill: #2a78d6; stroke: #ffffff"/>
     </g>
    </g>
    <g id="line2d_3">
     <path d="M 310.538361 155.715738 
 L 310.538361 88.206885 
-" clip-path="url(#pe2778a3e6f)" style="fill: none; stroke-dasharray: 3.7,1.6; stroke-dashoffset: 0; stroke: #8a8984"/>
+" clip-path="url(#p5a7b74d259)" style="fill: none; stroke-dasharray: 3.7,1.6; stroke-dashoffset: 0; stroke: #8a8984"/>
    </g>
    <g id="text_1">
     <text style="font-size: 9px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #52514e" x="444.055869" y="55.519475" transform="rotate(-0 444.055869 55.519475)">straight wall</text>
@@ -151,7 +150,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="pe2778a3e6f">
+  <clipPath id="p5a7b74d259">
    <rect x="18" y="35.7" width="457.56" height="225.029508"/>
   </clipPath>
  </defs>

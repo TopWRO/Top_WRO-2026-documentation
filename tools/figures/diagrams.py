@@ -7,10 +7,10 @@ chassis dimensions) are drawn dashed and labelled TODO.
 """
 import math
 
-from matplotlib.patches import Circle, FancyBboxPatch, Polygon, Rectangle, Wedge
+from matplotlib.patches import Circle, FancyBboxPatch, Rectangle, Wedge
 
-from style import (AQUA, BLUE, INK, INK2, MUTED, ORANGE, RED, ROLE, RULE, SCHEME_DIR,
-                   SURFACE, VIOLET, YELLOW, arrow, box, canvas, legend_roles, save)
+from style import (AQUA, BLUE, INK, INK2, MUTED, ORANGE, RULE, SURFACE, VIOLET, arrow, box,
+                   canvas, legend_roles, save)
 
 
 # --------------------------------------------------------------------------

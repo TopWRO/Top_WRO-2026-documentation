@@ -263,6 +263,14 @@ one complete sensor frame every 50 ms over USB. This keeps the Pi's Python threa
 time-critical I2C and UART work. See [`docs/software.md`](docs/software.md) for the thread
 model.
 
+<table>
+  <tr>
+    <td align="center"><b>Raspberry Pi 5</b><br><img src="docs/assets/components/raspberry_pi_5.jpg" width="260"></td>
+    <td align="center"><b>Pico 2 sensor hub</b><br><img src="docs/assets/photos/sensor_hub.jpg" width="260"></td>
+    <td align="center"><b>Sense HAT (start-up UI)</b><br><img src="docs/assets/components/sense_hat.jpg" width="260"></td>
+  </tr>
+</table>
+
 <p align="center"><img src="docs/assets/figures/software_architecture.png" width="880" alt="Software architecture"></p>
 
 ### 5.2 Sensors

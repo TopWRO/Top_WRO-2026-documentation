@@ -62,14 +62,16 @@ plt.rcParams.update({
     "axes.facecolor": SURFACE,
     "savefig.facecolor": SURFACE,
     "svg.fonttype": "none",
+    "svg.hashsalt": "topwro-2026",   # deterministic SVG ids -> clean git diffs
 })
 
 
 def save(fig, name, folder=FIG_DIR, svg=True):
     folder.mkdir(parents=True, exist_ok=True)
-    fig.savefig(folder / f"{name}.png", dpi=200, bbox_inches="tight", pad_inches=0.25)
+    fig.savefig(folder / f"{name}.png", dpi=200, bbox_inches="tight", pad_inches=0.25,
+                metadata={"Software": None})
     if svg:
-        fig.savefig(folder / f"{name}.svg", bbox_inches="tight", pad_inches=0.25)
+        fig.savefig(folder / f"{name}.svg", bbox_inches="tight", pad_inches=0.25, metadata={"Date": None})
     plt.close(fig)
     print("  wrote", (folder / name).relative_to(REPO), "(.png" + (", .svg)" if svg else ")"))
 
